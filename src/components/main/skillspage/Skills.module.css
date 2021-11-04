@@ -14,7 +14,7 @@
 
 .skillItem {
     width: 30%;
-    padding: 50px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: start;

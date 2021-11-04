@@ -15,8 +15,9 @@
     width: 100%;
     height: 500px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
+    padding: 0 50px;
 }
 
 .text{
@@ -42,7 +43,7 @@
     .homeWrapper{
         height: auto;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .text{
