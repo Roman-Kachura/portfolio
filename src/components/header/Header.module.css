@@ -11,6 +11,6 @@
 @media screen and (max-width: 480px){
     .header{
         padding: 10px;
-        justify-content: start;
+        justify-content: center;
     }
 }
