@@ -47,11 +47,13 @@
     }
 
     .text{
-        width: auto;
+        display: block;
+        min-width: 100%;
+        padding: 0;
         margin: 0 0 30px;
     }
 
     .image{
-        width: 80%;
+        width: 100%;
     }
 }
