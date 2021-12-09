@@ -50,6 +50,12 @@
           text-decoration: none;
           opacity: 0;
 
+          i{
+            font-family: $iconFontFamily;
+            font-size: 21px;
+            color:$primaryColor;
+          }
+
           &:hover {
             background: #fff;
           }
