@@ -1,0 +1,19 @@
+@import './../../styles/scss/mixins';
+@import './../../styles/scss/variable';
+
+.footer {
+    background: $secondColor;
+    padding: 40px;
+
+    .copyright {
+        @include flexCenter;
+        font-size: $linkFontSize;
+    }
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+}

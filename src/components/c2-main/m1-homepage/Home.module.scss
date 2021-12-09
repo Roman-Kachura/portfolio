@@ -1,0 +1,61 @@
+@import './../../../styles/scss/mixins';
+@import './../../../styles/scss/variable';
+
+.home{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    @include background('../../components/c2-main/m1-homepage/image/homeimage.jpeg');
+
+    &:after{
+        content: " ";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $bgGradient;
+        z-index: -1;
+        opacity: .6;
+    }
+
+    .container{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+
+        .homeWrapper{
+            .homeTitle{
+                display: block;
+                margin: 0 0 10px;
+                letter-spacing: 0;
+
+                @include text($secondTextFontFamily,$homeTitleFontSize,$titleLineHeight,800,$textColor);
+
+                .homeTitleName{
+                    color: $primaryColor;
+                }
+            }
+            .homeTitleProfession{
+                @include text($secondTextFontFamily,$primaryTitleFontSize,$titleLineHeight,500,$textColor);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px){
+    .container{
+        padding: 20px;
+
+        .homeWrapper{
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}

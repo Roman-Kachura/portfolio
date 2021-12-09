@@ -1,0 +1,66 @@
+@import './../../../styles/scss/mixins';
+@import './../../../styles/scss/variable';
+
+.skills {
+    .skillsContent {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .skillItem {
+            width: 31%;
+            background: #F6F7FE;
+            text-align: center;
+            padding: 20px 20px;
+            border-radius: 0px;
+            box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+
+            .icon {
+                margin: 15px 0;
+
+                i {
+                    display: inline-block;
+                    height: 70px;
+                    width: 70px;
+                    background: $primaryColor;
+                    border-radius: 50%;
+
+                   @include text($iconFontFamily,$iconFontSize,$iconLineHeight,$iconFontWeight,$textColor);
+                }
+            }
+
+            .technology {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-weight: 500;
+                font-size: 2.2rem;
+            }
+
+            .text{
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .skillsContent {
+        flex-direction: column;
+
+        .skillItem {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 20px 5px;
+
+            .icon {
+                margin-bottom: 20px;
+            }
+
+            .technology {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

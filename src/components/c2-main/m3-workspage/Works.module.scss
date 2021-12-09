@@ -1,0 +1,117 @@
+@import './../../../styles/scss/mixins';
+@import './../../../styles/scss/variable';
+
+.works {
+  background: $bgSecondColor;
+
+  .worksContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .worksItem {
+      width: 45%;
+      margin: 25px;
+
+      .image {
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        position: relative;
+        @include background('https://synchrotheme.com/theme/taso/assets/images/portfolio/img-1.jpg');
+        background-position: center;
+        overflow: hidden;
+        z-index: 0;
+        padding: 0;
+        margin: 0;
+
+
+        .imageWrapper {
+          opacity: 0;
+        }
+
+        .link {
+          display: none;
+          -webkit-transition: .5s all ease;
+          -o-transition: .5s all ease;
+          transition: .5s all ease;
+          height: 60px;
+          width: 60px;
+          background-color: $bgColor;
+          @include link();
+          border-radius: 10%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          text-decoration: none;
+          opacity: 0;
+
+          &:hover {
+            background: #fff;
+          }
+        }
+
+        &:hover {
+          .imageWrapper {
+            width: 100%;
+            height: 100%;
+            content: " ";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $bgGradient;
+            z-index: -1;
+            opacity: .6;
+            -webkit-transition: .5s all ease;
+            -o-transition: .5s all ease;
+            transition: .5s all ease;
+          }
+
+          .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+          }
+        }
+      }
+
+      .description {
+        height: auto;
+        padding: 20px 10px 40px;
+        background: #eaeaea;
+        margin: 0;
+
+        .projectTitle {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .worksContent {
+    flex-direction: column;
+
+    .worksItem {
+      width: 100%;
+      margin-bottom: 20px;
+
+      .image {
+        margin-bottom: 20px;
+      }
+
+      .description {
+        padding: 0 5px;
+      }
+    }
+  }
+}
