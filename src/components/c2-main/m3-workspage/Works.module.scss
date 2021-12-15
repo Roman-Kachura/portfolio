@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
 
     .worksItem {
       width: 45%;
@@ -109,6 +108,7 @@
     .worksContent {
       width: 100%;
       justify-content: center;
+      flex-wrap: wrap;
 
       .worksItem {
         width: 100%;

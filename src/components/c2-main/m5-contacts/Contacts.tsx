@@ -5,10 +5,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     faFacebookF,
     faInstagram,
-    faLinkedinIn, faMailchimp,
+    faLinkedinIn,
     faTelegramPlane
 } from "@fortawesome/free-brands-svg-icons";
-import {faEnvelope, faMailBulk, faMapMarked, faMapMarker, faMarker, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope, faMapMarkerAlt, faPhone} from "@fortawesome/free-solid-svg-icons";
 
 export const Contacts = () => {
     return (
@@ -32,7 +32,7 @@ export const Contacts = () => {
                         <ul>
                             <li><i><FontAwesomeIcon icon={faPhone}/></i>+48 732 899 950</li>
                             <li><i><FontAwesomeIcon icon={faEnvelope}/></i>roma.kachyra@gmail.com</li>
-                            <li><i><FontAwesomeIcon icon={faMapMarker}/></i>Warsaw, Poland</li>
+                            <li><i><FontAwesomeIcon icon={faMapMarkerAlt}/></i>Warsaw, Poland</li>
                         </ul>
 
                         <div className={style.social}>

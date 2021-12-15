@@ -12,7 +12,7 @@ export const Skills = () => {
                 <MainTitle title={'Мои'} spanTitleText={'Навыки'}/>
                 <div className={style.skillsContent}>
                     {
-                        skills.map(s => <SkillItem icon={s.icon} title={s.title} description={s.description}/>)
+                        skills.map((s,i) => <SkillItem key={`SkillItem ${i}`} icon={s.icon} title={s.title} description={s.description}/>)
                     }
                 </div>
             </div>
