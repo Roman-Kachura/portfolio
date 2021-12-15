@@ -6,7 +6,7 @@ export const  Remote = () => {
     return(
         <div className={style.remote}>
             <div className='container'>
-                <MainTitle title={'Расматриваю варианты'} spanTitleText={'удаленной работы'}/>
+                <MainTitle className={style.title} title={'Расматриваю варианты'} spanTitleText={'удаленной работы'}/>
                 <a className={style.link} href={''}>Нанять меня</a>
             </div>
         </div>

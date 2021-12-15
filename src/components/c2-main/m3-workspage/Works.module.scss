@@ -9,10 +9,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 
     .worksItem {
       width: 45%;
-      margin: 25px;
+      margin: 0 25px;
 
       .image {
         width: 100%;
@@ -50,10 +51,10 @@
           text-decoration: none;
           opacity: 0;
 
-          i{
+          i {
             font-family: $iconFontFamily;
             font-size: 21px;
-            color:$primaryColor;
+            color: $primaryColor;
           }
 
           &:hover {
@@ -103,20 +104,15 @@
 }
 
 
-@media screen and (max-width: 480px) {
-  .worksContent {
-    flex-direction: column;
-
-    .worksItem {
+@media screen and (max-width: 768px) {
+  .works {
+    .worksContent {
       width: 100%;
-      margin-bottom: 20px;
+      justify-content: center;
 
-      .image {
-        margin-bottom: 20px;
-      }
-
-      .description {
-        padding: 0 5px;
+      .worksItem {
+        width: 100%;
+        margin: 0 auto 30px;
       }
     }
   }

@@ -141,14 +141,34 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .form {
-    width: 100%;
+@media screen and (max-width: 768px) {
+  .contacts {
+    .formWrapper {
+      flex-wrap: wrap;
 
-    input[type='submit'] {
-      margin-top: 10px;
+      .form{
+        width: 100%;
+      }
+
+      .contactInfo{
+        width: 100%;
+
+        .social{
+          margin-top: 20px;
+        }
+      }
     }
   }
+}
 
-
+@media screen and (max-width: 480px){
+  .contacts{
+    .formWrapper{
+      .form{
+        input.formControl{
+          width: 100%;
+        }
+      }
+    }
+  }
 }

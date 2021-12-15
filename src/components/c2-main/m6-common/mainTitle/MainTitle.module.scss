@@ -4,13 +4,30 @@
 .mainTitle {
   @include flexCenter;
   margin-bottom: 50px;
+}
 
-  h4 {
-    text-transform: uppercase;
-    @include text($secondTextFontFamily,$primaryTitleFontSize,$titleLineHeight,$titleFontWeight,$secondColor);
+.title {
+  text-transform: uppercase;
+  @include text($secondTextFontFamily,$primaryTitleFontSize,$titleLineHeight,$titleFontWeight,$secondColor);
 
-    span {
-      color: $primaryColor;
-    }
+  span {
+    color: $primaryColor;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .mainTitle {
+    //margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .mainTitle {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px){
+  .mainTitle {
+    //margin-bottom: 15px;
   }
 }

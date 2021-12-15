@@ -7,9 +7,10 @@ export const Home = () => {
             <div className={`container ${style.container}`}>
                 <div className={style.homeWrapper}>
                     <h1 className={style.homeTitle}>
-                        Привет! Я - <span className={style.homeTitleName}>Роман Качура</span>
+                        <div className={style.divWrapper}>Привет!</div>
+                        <div className={style.divWrapper}> Я - <span className={style.homeTitleName}>Роман Качура</span></div>
                     </h1>
-                    <div className={style.homeTitleProfession}>и Я - front-end разработчик.</div>
+                    <div className={style.homeTitleProfession}>Front-end разработчик.</div>
                 </div>
             </div>
         </section>

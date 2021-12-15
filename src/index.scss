@@ -37,12 +37,26 @@ a{
   text-decoration: none;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1024px){
   .container{
-    padding:20px;
+    padding:100px 50px;
   }
+}
 
-  .title{
-    margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 50px 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 50px 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 50px 10px;
   }
 }
