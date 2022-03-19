@@ -9,48 +9,51 @@ import {
     faTelegramPlane
 } from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope, faMapMarkerAlt, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {Fade} from "react-awesome-reveal";
 
 export const Contacts = () => {
     return (
-        <div className={style.contacts}>
+        <div id='contacts' className={style.contacts}>
             <div className='container'>
                 <MainTitle title={'мои'} spanTitleText={'контакты'}/>
-                <div className={style.formWrapper}>
-                    <form className={style.form}>
-                        <input className={style.formControl} placeholder={'Name*'} type={'text'}/>
-                        <input className={style.formControl} placeholder={'Email*'} type={'text'}/>
-                        <textarea className={style.formControl} placeholder={'Message*'}/>
-                        <input className={style.btn} type={'submit'}/>
-                    </form>
-                    <div className={style.contactInfo}>
+                <Fade direction='left' duration={1500}>
+                    <div className={style.formWrapper}>
+                        <form className={style.form}>
+                            <input className={style.formControl} placeholder={'Name*'} type={'text'}/>
+                            <input className={style.formControl} placeholder={'Email*'} type={'text'}/>
+                            <textarea className={style.formControl} placeholder={'Message*'}/>
+                            <input className={style.btn} type={'submit'}/>
+                        </form>
+                        <div className={style.contactInfo}>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing
                                 and type setting industry when an unknown printer took
                                 a galley of type
                             </p>
 
-                        <ul>
-                            <li><i><FontAwesomeIcon icon={faPhone}/></i>+48 732 899 950</li>
-                            <li><i><FontAwesomeIcon icon={faEnvelope}/></i>roma.kachyra@gmail.com</li>
-                            <li><i><FontAwesomeIcon icon={faMapMarkerAlt}/></i>Warsaw, Poland</li>
-                        </ul>
+                            <ul>
+                                <li><i><FontAwesomeIcon icon={faPhone}/></i>+48 732 899 950</li>
+                                <li><i><FontAwesomeIcon icon={faEnvelope}/></i>roma.kachyra@gmail.com</li>
+                                <li><i><FontAwesomeIcon icon={faMapMarkerAlt}/></i>Warsaw, Poland</li>
+                            </ul>
 
-                        <div className={style.social}>
-                            <a href='#'>
-                                <i><FontAwesomeIcon icon={faInstagram}/></i>
-                            </a>
-                            <a href='#'>
-                                <i><FontAwesomeIcon icon={faLinkedinIn}/></i>
-                            </a>
-                            <a href='#'>
-                                <i><FontAwesomeIcon icon={faTelegramPlane}/></i>
-                            </a>
-                            <a href='#'>
-                                <i><FontAwesomeIcon icon={faFacebookF}/></i>
-                            </a>
+                            <div className={style.social}>
+                                <a href='#'>
+                                    <i><FontAwesomeIcon icon={faInstagram}/></i>
+                                </a>
+                                <a href='#'>
+                                    <i><FontAwesomeIcon icon={faLinkedinIn}/></i>
+                                </a>
+                                <a href='#'>
+                                    <i><FontAwesomeIcon icon={faTelegramPlane}/></i>
+                                </a>
+                                <a href='#'>
+                                    <i><FontAwesomeIcon icon={faFacebookF}/></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </Fade>
             </div>
         </div>
     )

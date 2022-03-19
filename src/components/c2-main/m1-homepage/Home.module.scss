@@ -7,6 +7,7 @@
   overflow: hidden;
   z-index: 0;
   @include background('../../components/c2-main/m1-homepage/image/homeimage.jpeg');
+  //@include background('../../components/c2-main/m1-homepage/image/photo_2021-12-09_18-59-26.jpg');
 
   &:after {
     content: " ";
@@ -46,7 +47,10 @@
       }
 
       .homeTitleProfession {
-        @include text($secondTextFontFamily, $primaryTitleFontSize, $titleLineHeight, 500, $textColor);
+        h2{
+          @include text($secondTextFontFamily, $primaryTitleFontSize, $titleLineHeight, 300, $textColor);
+        }
+
       }
     }
   }

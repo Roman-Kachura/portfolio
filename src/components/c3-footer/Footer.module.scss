@@ -4,6 +4,7 @@
 .footer {
     background: $secondColor;
     padding: 40px;
+    position: relative;
 
     .copyright {
         @include flexCenter;

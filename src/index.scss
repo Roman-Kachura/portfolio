@@ -1,5 +1,6 @@
 @import "styles/scss/variable";
 @import 'styles/scss/mixins';
+@import 'components/c1-header/Header.module';
 
 *,
 *:after,
@@ -36,6 +37,12 @@ h1,h2,h3,h4,h5,h6{
 a{
   text-decoration: none;
 }
+
+//a.active{
+//  position: relative;
+//  border-right: 2px solid $primaryColor;
+//  border-left: 2px solid $primaryColor;
+//}
 
 @media screen and (max-width: 1024px){
   .container{
