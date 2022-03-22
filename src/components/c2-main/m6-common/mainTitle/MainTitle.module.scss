@@ -3,12 +3,13 @@
 
 .mainTitle {
   @include flexCenter;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 
 .title {
   text-transform: uppercase;
   @include text($secondTextFontFamily,$primaryTitleFontSize,$titleLineHeight,$titleFontWeight,$secondColor);
+  letter-spacing: 3px;
 
   span {
     color: $primaryColor;

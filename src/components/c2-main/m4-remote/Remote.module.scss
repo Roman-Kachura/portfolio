@@ -27,6 +27,7 @@
   }
 
   .link {
+    text-align: center;
     @include btn($textColor);
   }
 }

@@ -7,9 +7,9 @@ export const Remote = () => {
     return (
         <div id='remote' className={style.remote}>
             <div className='container'>
-                <MainTitle className={style.title} title={'Расматриваю варианты'} spanTitleText={'удаленной работы'}/>
+                <MainTitle className={style.title} title={'CONSIDERING REMOTE '} spanTitleText={'WORK OPTIONS'}/>
                 <Fade direction='left' duration={1500}>
-                    <a className={style.link} href={''}>Нанять меня</a>
+                    <a className={style.link} href={''}>Hire me</a>
                 </Fade>
             </div>
         </div>

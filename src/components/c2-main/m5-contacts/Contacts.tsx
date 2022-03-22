@@ -10,19 +10,21 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope, faMapMarkerAlt, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {Fade} from "react-awesome-reveal";
+import {MainSubTitle} from "../m6-common/mainSubTitle/MainSubTitle";
 
 export const Contacts = () => {
     return (
         <div id='contacts' className={style.contacts}>
             <div className='container'>
-                <MainTitle title={'мои'} spanTitleText={'контакты'}/>
+                <MainTitle title={'My'} spanTitleText={'Contacts'}/>
+                <MainSubTitle subTitle={'CONTACT WITH ME'}/>
                 <Fade direction='left' duration={1500}>
                     <div className={style.formWrapper}>
                         <form className={style.form}>
                             <input className={style.formControl} placeholder={'Name*'} type={'text'}/>
                             <input className={style.formControl} placeholder={'Email*'} type={'text'}/>
                             <textarea className={style.formControl} placeholder={'Message*'}/>
-                            <input className={style.btn} type={'submit'}/>
+                            <input className={style.btn} type={'submit'} value={'send'}/>
                         </form>
                         <div className={style.contactInfo}>
                             <p>
@@ -38,16 +40,16 @@ export const Contacts = () => {
                             </ul>
 
                             <div className={style.social}>
-                                <a href='#'>
+                                <a target='_blank' href='https://instagram.com/roman_kachura?utm_medium=copy_link'>
                                     <i><FontAwesomeIcon icon={faInstagram}/></i>
                                 </a>
-                                <a href='#'>
+                                <a target='_blank' href='https://www.linkedin.com/in/roman-kachura-201b07229'>
                                     <i><FontAwesomeIcon icon={faLinkedinIn}/></i>
                                 </a>
-                                <a href='#'>
+                                <a target='_blank' href='https://t.me/roman_kachura'>
                                     <i><FontAwesomeIcon icon={faTelegramPlane}/></i>
                                 </a>
-                                <a href='#'>
+                                <a target='_blank' href='https://www.facebook.com/profile.php?id=100068449718499'>
                                     <i><FontAwesomeIcon icon={faFacebookF}/></i>
                                 </a>
                             </div>

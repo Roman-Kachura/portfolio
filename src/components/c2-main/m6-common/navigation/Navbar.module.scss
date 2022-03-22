@@ -13,7 +13,7 @@
     display: block;
     margin: 0 15px;
     padding: 0 5px;
-    @include text($secondTextFontFamily, $linkFontSize, 1em, 300, $textColor);
+    @include text($secondTextFontFamily, $linkFontSize, 1em, 500, $textColor);
     text-transform: uppercase;
     transition: ease color .3s;
     border-right: 2px solid transparent;
@@ -21,7 +21,7 @@
     cursor: pointer;
 
     &:hover {
-      color: $primaryColor;
+      color: rgba(255,255,255,0.6);
     }
 
     &.active {

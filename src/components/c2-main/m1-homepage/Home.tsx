@@ -9,13 +9,13 @@ export const Home = () => {
             <div className={`container ${style.container}`}>
                 <div className={style.homeWrapper}>
                     <h1 className={style.homeTitle}>
-                        <div className={style.divWrapper}>Привет!</div>
-                        <div className={style.divWrapper}> Я - <span className={style.homeTitleName}>Роман Качура</span>
+                        <div className={style.divWrapper}>Hi!</div>
+                        <div className={style.divWrapper}> I'm - <span className={style.homeTitleName}>Roman Kachura</span>
                         </div>
                     </h1>
                     <div className={style.homeTitleProfession}>
                         <ReactTypingEffect
-                            messages={['Front-end разработчик.']}
+                            messages={['Front-end developer.']}
                             options={{
                                 cursor: {
                                     blinkPeriod: 1000

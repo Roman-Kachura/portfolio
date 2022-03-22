@@ -20,7 +20,7 @@ export const Navbar = ({headerShow, showMobileMenu}: NavbarPropsType) => {
                   duration={500}
                   offset={-100}
             >
-                Главная
+                Home
             </Link>
             <Link activeClass={style.active}
                   to="skills"
@@ -29,7 +29,7 @@ export const Navbar = ({headerShow, showMobileMenu}: NavbarPropsType) => {
                   duration={500}
                   offset={-60}
             >
-                Скиллы
+                Skills
             </Link>
             <Link activeClass={style.active}
                   to="works"
@@ -38,7 +38,7 @@ export const Navbar = ({headerShow, showMobileMenu}: NavbarPropsType) => {
                   duration={500}
                   offset={-60}
             >
-                Работы
+                Works
             </Link>
             <Link activeClass={style.active}
                   to="contacts"
@@ -47,7 +47,7 @@ export const Navbar = ({headerShow, showMobileMenu}: NavbarPropsType) => {
                   duration={500}
                   offset={-60}
             >
-                Контакты
+                Contacts
             </Link>
         </nav>
     )
