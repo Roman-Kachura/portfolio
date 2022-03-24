@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ChangeEvent, FormEvent, useState} from "react";
 import style from './Contacts.module.scss';
 import {MainTitle} from '../m6-common/mainTitle/MainTitle';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -11,8 +11,29 @@ import {
 import {faEnvelope, faMapMarkerAlt, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {Fade} from "react-awesome-reveal";
 import {MainSubTitle} from "../m6-common/mainSubTitle/MainSubTitle";
+import MyForm from "./myForm";
 
 export const Contacts = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const changeName = (e: ChangeEvent<HTMLInputElement>) => {
+        setName(e.currentTarget.value);
+    }
+    const changeEmail = (e: ChangeEvent<HTMLInputElement>) => {
+        setEmail(e.currentTarget.value);
+    }
+    const changeMessage = (e: ChangeEvent<HTMLTextAreaElement>) => {
+        setMessage(e.currentTarget.value);
+    }
+
+    const sendMessage = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        if (name && email && message) {
+            alert('123');
+        }
+    }
     return (
         <div id='contacts' className={style.contacts}>
             <div className='container'>
@@ -20,12 +41,7 @@ export const Contacts = () => {
                 <MainSubTitle subTitle={'CONTACT WITH ME'}/>
                 <Fade direction='left' duration={1500}>
                     <div className={style.formWrapper}>
-                        <form className={style.form}>
-                            <input className={style.formControl} placeholder={'Name*'} type={'text'}/>
-                            <input className={style.formControl} placeholder={'Email*'} type={'text'}/>
-                            <textarea className={style.formControl} placeholder={'Message*'}/>
-                            <input className={style.btn} type={'submit'} value={'send'}/>
-                        </form>
+                        <MyForm/>
                         <div className={style.contactInfo}>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing
@@ -34,7 +50,7 @@ export const Contacts = () => {
                             </p>
 
                             <ul>
-                                <li><i><FontAwesomeIcon icon={faPhone}/></i>+48 732 899 950</li>
+                                <li><i><FontAwesomeIcon icon={faPhone}/></i>+48732899950</li>
                                 <li><i><FontAwesomeIcon icon={faEnvelope}/></i>roma.kachyra@gmail.com</li>
                                 <li><i><FontAwesomeIcon icon={faMapMarkerAlt}/></i>Warsaw, Poland</li>
                             </ul>
