@@ -25,3 +25,5 @@ yarn-error.log*
 
 #webstorm
 .idea
+yarn.lock
+yarn-error.log
